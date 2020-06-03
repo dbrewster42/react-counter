@@ -11,7 +11,7 @@ function Display(props) {
   return (
     <div
       style={{
-        background: isOn ? "yellow" : "blue",
+        color: isOn ? "yellow" : "blue",
       }}
       onClick={toggleLight}
     >

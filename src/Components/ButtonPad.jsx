@@ -6,7 +6,6 @@ export default function ButtonPad() {
   //   const handleIncrement = () => {
   //     setCount(count + 1);
   //   };
-  //set element to on/off
   const handleIncrement = () => {
     setCount((prevCount) => prevCount + 1);
   };
@@ -16,20 +15,39 @@ export default function ButtonPad() {
   const reset = () => {
     setCount(() => 0);
   };
-  const fiveIncrease = () => {
-    setCount((prevCount) => prevCount + 5);
+  const double = () => {
+    setCount((prevCount) => prevCount * 2);
   };
   const doubleDecrease = () => {
     setCount((prevCount) => prevCount - 2);
   };
+  const fiveIncrease = () => {
+    setCount((prevCount) => prevCount + 5);
+  };
+
   return (
     <div>
       <div className="box">{count}</div>
-      <button onClick={fiveIncrease}>Five Up</button>
-      <button onClick={handleIncrement}>Up Button</button>
-      <button onClick={reset}>Reset</button>
-      <button onClick={decreaseCount}>Down Button</button>
-      <button onClick={doubleDecrease}>Double Down</button>
+
+      <button className="down" onClick={decreaseCount}>
+        Down
+      </button>
+      <button className="reset" onClick={reset}>
+        Reset
+      </button>
+      <button className="up" onClick={handleIncrement}>
+        Up
+      </button>
+      <br></br>
+      <button className="down" onClick={doubleDecrease}>
+        -2
+      </button>
+      <button className="up" onClick={double}>
+        Double
+      </button>
+      <button className="up" onClick={fiveIncrease}>
+        Add 5
+      </button>
     </div>
   );
 }
