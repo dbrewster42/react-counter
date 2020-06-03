@@ -23,6 +23,14 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  font-size: 36px;
+  padding: 100px;
+  margin-left: 600px;
+}
 
 .App-link {
   color: #61dafb;
