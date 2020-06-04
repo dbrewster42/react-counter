@@ -15,7 +15,7 @@ function Display(props) {
       }}
       onClick={toggleLight}
     >
-      <h2 className="display">Counter</h2>
+      <h2 className="display">Click Here</h2>
     </div>
   );
 }
